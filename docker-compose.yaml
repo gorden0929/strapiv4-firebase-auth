@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  ionicerp-mysql:
+    restart: always
+    image: mysql:5.7
+    container_name: autolive-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: strapi
+      MYSQL_DATABASE: strapi
+      MYSQL_USER: strapi
+      MYSQL_PASSWORD: strapi
+    ports:
+      - 3306:3306
